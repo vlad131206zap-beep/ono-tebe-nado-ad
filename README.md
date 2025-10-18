@@ -26,7 +26,3 @@ https://github.com/vlad131206zap-beep/ono-tebe-nado-ad
 
 - Github - [vlad131206zap-beep](https://github.com/vlad131206zap-beep)
 - Frontend Mentor - [@vlad131206zap-beep](https://www.frontendmentor.io/profile/vlad131206zap-beep)
-
-## Благодарность
-
-Благодарю команду Яндекс Практикум за предоставление дизайна и уроков!
