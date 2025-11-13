@@ -1,4 +1,4 @@
-/* ======= HEADER ======= */
+
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,6 @@
     text-underline-offset: 3px;
 }
 
-/* ======= ADDRESS ======= */
 .contact-block {
     font-size: 18px;
     line-height: 24px;
@@ -57,7 +56,7 @@
     gap: 3px;
 }
 
-/* ======= HERO / COVER ======= */
+
 .hero {
     min-height: 757px;
     position: relative;
@@ -138,7 +137,7 @@
     font-family: "Raleway", sans-serif;
 }
 
-/* ======= AUCTION / LOTS ======= */
+
 .auction-section {
     margin: 0 24px 0 22px;
 }
@@ -221,7 +220,7 @@
     margin-left: 40px;
 }
 
-/* ======= INFO / ABOUT ======= */
+
 .info-block {
     padding: 171px 24px 0;
 }
@@ -265,7 +264,7 @@
     line-height: 24px;
 }
 
-/* ======= FOOTER ======= */
+
 .site-footer {
     display: flex;
     justify-content: space-between;
