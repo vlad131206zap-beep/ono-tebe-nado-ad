@@ -13,25 +13,25 @@
 </head>
 
 <body>
-  <header>
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li class="nav-item no-bullet">
+  <header class="page-header">
+    <nav class="main-navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item no-bullet">
           <a class="nav-link">главная</a>
         </li>
-        <li class="nav-item">
+        <li class="navigation-item">
           <a class="nav-link" href="#2">посмотреть лоты</a>
         </li>
-        <li class="nav-item">
+        <li class="navigation-item">
           <a class="nav-link" href="#3">об аукционе</a>
         </li>
       </ul>
     </nav>
-    <a class="site-logo">
+    <a class="main-logo">
       <img class="logo-img" src="./images/logo-black.svg" alt="Логотип проекта">
     </a>
-    <div class="contact-info">
-      <address class="header-contacts">
+    <div class="contact-details">
+      <address class="header-address">
         <a class="contact-link" href="tel:+99995555555">+9 999 555 5555</a><br>
         <a class="contact-link" href="mailto:mail@example.com">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
@@ -39,37 +39,37 @@
     </div>
   </header>
   <main>
-    <section class="hero-section">
-      <h1 class="main-heading">
-        <span class="text-left">о <span class="wide-spacing">но</span></span>
-        <span class="text-center">те <span class="wide-spacing"> бе</span></span>
-        <span class="text-right"><span class="wide-spacing">н</span>ад<span
-            class="no-spacing">о</span></span>
+    <section class="main-cover">
+      <h1 class="cover-title">
+        <span class="left-aligned">о <span class="wide-spacing">но</span></span>
+        <span class="center-aligned">те <span class="wide-spacing"> бе</span></span>
+        <span class="right-aligned"><span class="wide-spacing">н</span>ад<span
+            class="normal-spacing">о</span></span>
       </h1>
-      <div class="hero-description">
-        <p class="hero-text">аукцион вещей, в которые никто не верил</p>
-        <button class="bid-btn" type="button">сделать ставку</button>
+      <div class="cover-info">
+        <p class="cover-subtitle">аукцион вещей, в которые никто не верил</p>
+        <button class="place-bet" type="button">сделать ставку</button>
       </div>
-      <div class="dark-overlay"></div>
+      <div class="cover-overlay"></div>
     </section>
-    <section class="lots-section">
-      <h2 class="section-title">лоты</h2>
-      <ul class="lots-grid">
-        <li class="lot-item">
-          <a class="lot-link" href="#4">
-            <article class="lot-card film-lot">
-              <h3 class="lot-title">фильм режиссёра, который бросил киношколу</h3>
-              <p class="lot-description">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
+    <section class="lots-container">
+      <h2 class="lots-title">лоты</h2>
+      <ul class="lots-list">
+        <li class="lots-item">
+          <a class="lot-card-link" href="#4">
+            <article class="lot-card film-card">
+              <h3 class="card-title">фильм режиссёра, который бросил киношколу</h3>
+              <p class="card-content">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
                 знали, что режиссёр — Пол Томас Андерсон?</p>
             </article>
             <div class="card-overlay"></div>
           </a>
         </li>
-        <li class="lot-item">
-          <a class="lot-link" href="#4">
-            <article class="lot-card book-lot">
-              <h3 class="lot-title">книга, где описан один скучный день из жизни рекламного агента</h3>
-              <p class="lot-description">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
+        <li class="lots-item">
+          <a class="lot-card-link" href="#4">
+            <article class="lot-card book-card">
+              <h3 class="card-title">книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="card-content">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на
                 древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная
                 с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на
                 «Улисса» Джеймса Джойса?</p>
@@ -77,11 +77,11 @@
             <div class="card-overlay"></div>
           </a>
         </li>
-        <li class="lot-item">
-          <a class="lot-link" href="#4">
-            <article class="lot-card art-lot">
-              <h3 class="lot-title">картина, которую повторит даже 5-летний сын маминой подруги</h3>
-              <p class="lot-description">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
+        <li class="lots-item">
+          <a class="lot-card-link" href="#4">
+            <article class="lot-card picture-card">
+              <h3 class="card-title">картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="card-content">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на
                 инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали,
                 что это — одна из революционных работ Кандинского?</p>
             </article>
@@ -89,15 +89,15 @@
           </a>
         </li>
       </ul>
-      <a class="more-link" href="#5">посмотреть больше</a>
+      <a class="show-more" href="#5">посмотреть больше</a>
     </section>
     <section class="about-section">
       <article class="about-content">
-        <div class="about-logo">
-          <img class="logo-white" src="./images/logo-white.svg" alt="logo">
+        <div class="about-logo-container">
+          <img class="about-logo-img" src="./images/logo-white.svg" alt="logo">
         </div>
         <h2 class="about-heading">об аукционе</h2>
-        <div class="about-text">
+        <div class="about-text-content">
           <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не
             должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую
             может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
@@ -111,41 +111,41 @@
       </article>
     </section>
   </main>
-  <footer>
+  <footer class="page-footer">
     <div class="footer-contacts">
-      <address class="footer-address">
+      <address class="footer-address-info">
         <a href="tel:+70000000">+9 999 555 5555</a>
         <a href="mailto:mail@example.com">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </div>
-    <nav class="footer-nav">
-      <ul class="footer-menu">
-        <li class="footer-menu-item active-item">
-          <a class="footer-link">главная</a>
+    <nav class="footer-navigation">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item active-nav-item">
+          <a class="footer-nav-link">главная</a>
         </li>
-        <li class="footer-menu-item">
-          <a class="footer-link" href="#">посмотреть лоты</a>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">посмотреть лоты</a>
         </li>
-        <li class="footer-menu-item">
-          <a class="footer-link" href="#">об аукционе</a>
+        <li class="footer-nav-item">
+          <a class="footer-nav-link" href="#">об аукционе</a>
         </li>
       </ul>
     </nav>
-    <ul class="social-links">
-      <li class="social-item">
+    <ul class="social-media-list">
+      <li class="social-media-item">
         <a href="#" target="_blank">
-          <img class="social-icon" src="./images/yt.svg" alt="yt">
+          <img class="social-icon-img" src="./images/yt.svg" alt="yt">
         </a>
       </li>
-      <li class="social-item">
+      <li class="social-media-item">
         <a href="#" target="_blank">
-          <img class="social-icon" src="./images/vk.svg" alt="vk">
+          <img class="social-icon-img" src="./images/vk.svg" alt="vk">
         </a>
       </li>
-      <li class="social-item">
+      <li class="social-media-item">
         <a href="#" target="_blank">
-          <img class="social-icon" src="./images/pinterest.svg" alt="pinterest">
+          <img class="social-icon-img" src="./images/pinterest.svg" alt="pinterest">
         </a>
       </li>
     </ul>
