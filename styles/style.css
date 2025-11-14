@@ -1,38 +1,37 @@
-/* style.css */
-header {
+.page-header {
+  padding: 92px 50px;
   display: flex;
-  padding: 92px 50px 96px;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.main-nav {
+.main-navigation {
   margin-left: 26px;
 }
 
-.nav-list {
+.navigation-list {
   display: flex;
+  flex-direction: row;
   gap: 32px;
   align-items: flex-start;
-  flex-direction: row;
 }
 
-.nav-item {
+.navigation-item {
   list-style-type: circle;
+  font-size: 18px;
 }
 
 .no-bullet {
   list-style-type: none;
-  text-decoration: none;
 }
 
 .nav-link {
   font-size: 18px;
-  line-height: 21px;
+  line-height: normal;
   text-underline-offset: 4px;
 }
 
-.site-logo {
+.main-logo {
   display: block;
   width: 148px;
   margin: 0 183px 0 38px;
@@ -42,191 +41,212 @@ header {
   width: 100%;
 }
 
-.contact-info {
+.contact-details {
   font-size: 18px;
   line-height: 24.3px;
-  text-underline-offset: 4px;
 }
 
-.header-contacts {
+.header-address {
   font-style: normal;
-  margin: 0 50px 0 0;
   width: 240px;
+  text-underline-offset: 4px;
 }
 
 .contact-link {
   text-decoration: underline;
 }
 
-.hero-section {
+.main-cover {
   position: relative;
   min-height: 757px;
-  background: url(../images/cover.jpg) center/cover;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
   margin-bottom: 180px;
-  padding: 165px 50px 0;
+  padding-top: 165px;
 }
 
-.dark-overlay {
-  background: rgba(0, 0, 0, 0.6);
+.cover-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.main-heading {
+.cover-title {
+  display: flex;
+  color: white;
+  font-size: 100px;
+  text-transform: uppercase;
+  flex-direction: column;
+  width: 100%;
   position: relative;
   z-index: 1;
-  color: #fff;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 115%;
   letter-spacing: 30px;
-  text-transform: uppercase;
 }
 
 .wide-spacing {
   letter-spacing: 60px;
 }
 
-.no-spacing {
-  letter-spacing: 0;
+.normal-spacing {
+  letter-spacing: normal;
 }
 
-.text-left {
-  line-height: 1.15;
-  margin-left: 0;
-  display: block;
+.left-aligned {
+  margin-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 115%;
 }
 
-.text-center {
-  line-height: 1.15;
-  margin: 20px 0 0;
-  display: block;
-  text-align: center;
+.center-aligned {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  line-height: 115%;
 }
 
-.text-right {
-  line-height: 1.15;
-  margin: 20px 0 0;
-  display: block;
-  text-align: right;
-}
-
-.hero-description {
-  margin-top: 135px;
+.right-aligned {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  margin-top: 20px;
+  margin-right: 50px;
+  line-height: 115%;
+}
+
+.cover-info {
+  margin-top: 135px;
+  display: flex;
   gap: 78px;
+  justify-content: flex-end;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
 
-.hero-text {
-  color: #fff;
-  font-size: 22px;
-  line-height: 28px;
+.cover-subtitle {
+  font-weight: normal;
   text-transform: uppercase;
   word-spacing: 18px;
-}
-
-.bid-btn {
-  background: transparent;
-  border: 1px solid #fff;
-  padding: 12px 32px;
-  color: #fff;
   font-size: 22px;
+  line-height: 28px;
+  color: white;
+}
+
+.place-bet {
   text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 22px;
+  padding: 12px 32px;
+  margin-right: 50px;
   cursor: pointer;
+  color: white;
   font-family: Raleway, sans-serif;
+  font-weight: normal;
 }
 
-.lots-section {
-  margin: 0 50px;
+.lots-container {
+  margin: 0 50px 0 50px;
 }
 
-.section-title {
-  font-size: 40px;
+.lots-title {
   text-transform: uppercase;
-  margin: 0 0 27px 40px;
+  font-size: 40px;
+  margin-left: 40px;
+  margin-bottom: 27px;
 }
 
-.lots-grid {
+.film-card {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.book-card {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.picture-card {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots-list {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.lot-item {
-  list-style: none;
-  flex: 1;
-  min-width: 334px;
+.lot-card-link {
+  display: block;
+  text-decoration: none;
+  position: relative;
 }
 
-.lot-link {
-  display: block;
-  height: 100%;
-  text-decoration: none;
+.card-title {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+  max-width: 334px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  text-underline-offset: 3px;
+}
+
+.card-content {
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  max-width: 334px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.lots-item {
+  list-style-type: none;
 }
 
 .lot-card {
   position: relative;
-  height: 563px;
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
-  background-size: cover;
+  min-height: 563px;
+  width: 334px;
   background-position: center;
+  background-size: cover;
 }
 
-.film-lot {
-  background-image: url(../images/card-lot-01.jpg);
-}
-
-.book-lot {
-  background-image: url(../images/card-lot-02.jpg);
-}
-
-.art-lot {
-  background-image: url(../images/card-lot-03.jpg);
-}
-
-.card-overlay {
+.lot-card::before {
+  content: '';
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
-.lot-title {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  font-size: 22px;
-  line-height: 120%;
+.show-more {
+  font-size: 20px;
+  line-height: normal;
   text-decoration: underline;
-  text-transform: uppercase;
-  text-underline-offset: 2px;
-}
-
-.lot-description {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  font-size: 20px;
-  line-height: 120%;
-}
-
-.more-link {
-  margin-left: 40px;
-  font-size: 20px;
   text-underline-offset: 5px;
+  margin-left: 40px;
 }
 
 .about-section {
-  margin: 0 50px;
-  padding: 182px 0 0;
+  padding: 182px 50px 0 50px;
 }
 
 .about-content {
@@ -235,29 +255,32 @@ header {
   gap: 8px 25px;
 }
 
-.about-logo {
+.about-logo-container {
   width: 240px;
   height: 240px;
-  background: #000;
+  background-color: black;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 95px;
+  margin-left: 95px;
 }
 
-.logo-white {
+.about-logo-img {
   width: 148px;
+  height: 114px;
 }
 
 .about-heading {
-  padding: 100px 0 0;
+  display: flex;
+  align-items: center;
   font-size: 40px;
   text-transform: uppercase;
+  padding-top: 100px;
 }
 
-.about-text {
-  grid-column: 2;
+.about-text-content {
+  grid-column: 2/3;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -265,48 +288,54 @@ header {
   line-height: 24px;
 }
 
-footer {
-  margin: 180px 50px 90px;
+.page-footer {
+  padding: 180px 50px 90px 50px;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
-.footer-address {
-  font-style: normal;
+.footer-address-info {
   font-size: 18px;
-  line-height: 24.3px;
   text-underline-offset: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-style: normal;
+  width: 240px;
 }
 
-.footer-nav {
+.footer-navigation {
   text-align: center;
 }
 
-.footer-menu {
+.footer-nav-list {
   list-style: none;
 }
 
-.footer-menu-item {
+.footer-nav-item {
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
   margin-bottom: 5px;
 }
 
-.footer-link {
-  font-size: 18px;
-  text-underline-offset: 4px;
-}
-
-.active-item .footer-link {
+.active-nav-item {
   text-decoration: none;
 }
 
-.social-links {
+.social-media-list {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   gap: 48px;
-  list-style: none;
 }
 
-.social-icon {
+.social-media-item {
+  list-style-type: none;
+}
+
+.social-icon-img {
   width: 48px;
   height: 48px;
 }
